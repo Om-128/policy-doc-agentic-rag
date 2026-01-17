@@ -1,0 +1,9 @@
+pyyaml
+langchain
+pypdf
+langchain-community
+unstructured
+unstructured_inference
+pdf2image
+pdfminer.six
+pi_heif
