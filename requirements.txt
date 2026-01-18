@@ -7,3 +7,7 @@ unstructured_inference
 pdf2image
 pdfminer.six
 pi_heif
+langchain_huggingface
+sentence_transformers
+chroma
+langchain-chroma

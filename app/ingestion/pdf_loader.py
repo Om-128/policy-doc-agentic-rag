@@ -2,7 +2,7 @@ import os
 import sys
 
 from typing import List
-from utils import BASE_DIR
+from app.utils import BASE_DIR
 from custom_exception import CustomException
 
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredPDFLoader
@@ -19,7 +19,7 @@ from langchain_core.documents import Document
 """
 class PDFLoader:
         
-    def load(self, file_paths: List[str]) -> List[Document]:
+    def load_pdf(self, file_paths: List[str]) -> List[Document]:
         """
         Load multiple PDFs and return a list of LangChain Documents.
 
@@ -54,7 +54,7 @@ class PDFLoader:
             raise CustomException(e, sys)
 
     def load_single_pdf(self, path):
-                """
+        """
         Load a single PDF file.
 
         Attempts fast text extraction first using PyPDFLoader.

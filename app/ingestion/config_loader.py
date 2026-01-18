@@ -2,7 +2,7 @@ import os
 import sys
 import yaml
 
-from utils import BASE_DIR
+from app.utils import BASE_DIR
 from custom_exception import CustomException
 
 class PathLoaderConfig:
