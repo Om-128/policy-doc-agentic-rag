@@ -7,6 +7,11 @@ from langchain_chroma import Chroma
 
 from app.utils import CHROMA_DB_DIR, COLLECTION_NAME
 
+"""
+    This class creates Chroma DB inside CHROMA_DB_DIR
+    take chunked_documents and extracts texts and metadata from them
+    Apply Embedding on texts and store embedded_texts and metadata in collection 
+"""
 class ChromaConfig:
     
     def __init__(self):
