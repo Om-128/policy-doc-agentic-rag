@@ -14,21 +14,12 @@ from langchain_core.documents import Document
 
     - Accepts absolute PDF file paths
     - Uses PyPDFLoader for text-based PDFs
-    - Falls back to UnstructuredPDFLoader for scanned / govt PDFs
+    - Falls back to UnstructuredPDFLoader if Using PyPDFLoader not possible
     - Adds standardized metadata for downstream RAG processing
 """
 class PDFLoader:
         
     def load_pdf(self, file_paths: List[str]) -> List[Document]:
-        """
-        Load multiple PDFs and return a list of LangChain Documents.
-
-        Args:
-            file_paths (List[str]): List of absolute PDF file paths
-
-        Returns:
-            List[Document]: Loaded documents with metadata
-        """
         try:
             all_docs = []
 
@@ -37,13 +28,11 @@ class PDFLoader:
                 docs = self.load_single_pdf(path)
 
                 file_name = os.path.splitext(os.path.basename(path))[0]
-                doc_type = self._get_type(path)
 
                 for doc in docs:
                     doc.metadata.update({
                         "source":file_name,
-                        "file_name":file_name,
-                        "type":doc_type
+                        "file_name":file_name
                     })
 
                 all_docs.extend(docs)
@@ -54,19 +43,6 @@ class PDFLoader:
             raise CustomException(e, sys)
 
     def load_single_pdf(self, path):
-        """
-        Load a single PDF file.
-
-        Attempts fast text extraction first using PyPDFLoader.
-        Falls back to UnstructuredPDFLoader for PDFs with
-        broken encodings or scanned content.
-
-        Args:
-            path (str): Absolute path to the PDF file
-
-        Returns:
-            List[Document]: Documents extracted from the PDF
-        """
         try:
             # First try PyPDF (fast)
             loader = PyPDFLoader(path)
@@ -80,7 +56,3 @@ class PDFLoader:
                 strategy="fast"
             )
             return loader.load()
-
-
-    def _get_type(self, path:str):
-        return "policy" if "policies" in path.lower() else "document"

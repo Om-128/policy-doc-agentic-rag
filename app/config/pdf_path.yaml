@@ -1,31 +1,4 @@
 # PDF File Paths
 
-policies:
-  - "data/policies/atal_pension_yojana.pdf"
-  - "data/policies/ayushman_bharat_pradhan_mantri_jan_arogya_yojana.pdf"
-  - "data/policies/beneficiary_identification_guidelines.pdf"
-  - "data/policies/national_social_assistance_program.pdf"
-  - "data/policies/pradhan_mantri_awas yojana_urban_2.0_hindi.pdf"
-  - "data/policies/pradhan_mantri_awas yojana_urban_2.0.pdf"
-  - "data/policies/pradhan_mantri_jan_dhan_yojana.pdf"
-  - "data/policies/pradhan_mantri_kaushal_vikas_yojana.pdf"
-  - "data/policies/pradhan_mantri_kisan_samman_nidhi_scheme.pdf"
-  - "data/policies/pradhan_mantri_ujjwala_yojana.pdf"
-
-doocuments:
-  - "data/documents/birth_certificate.pdf"
-  - "data/documents/bonafied_certificate.pdf"
-  - "data/documents/cast_certificate.pdf"
-  - "data/documents/cast_validity_certificate.pdf"
-  - "data/documents/character_certificate.pdf"
-  - "data/documents/death_certificate.pdf"
-  - "data/documents/income_certificate.pdf"
-  - "data/documents/marrige_certificate.pdf"
-  - "data/documents/new_ration_card.pdf"
-  - "data/documents/non_creamy_layer_certificate.pdf"
-  - "data/documents/permission_for_cultural_programme.pdf"
-  - "data/documents/registration_of_factory.pdf"
-  - "data/documents/residency_certificate.pdf"
-  - "data/documents/senior_citizen.pdf"
-  - "data/documents/shop_and_establishment_registration.pdf"
-  - "data/documents/widow_certificate.pdf"
+dataset:
+  - "data/Software_FAQ.pdf"

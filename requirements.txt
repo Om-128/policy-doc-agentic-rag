@@ -11,3 +11,5 @@ langchain_huggingface
 sentence_transformers
 chroma
 langchain-chroma
+dotenv
+groq
