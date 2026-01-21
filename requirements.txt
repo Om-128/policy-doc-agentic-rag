@@ -13,3 +13,6 @@ chroma
 langchain-chroma
 dotenv
 groq
+tavily-python
+mcp
+langchain-groq
