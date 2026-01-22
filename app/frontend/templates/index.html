@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agentic RAG Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="app-wrapper">
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="window-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="title">🤖 Agentic RAG Assistant</div>
+        </div>
+
+        <!-- Chat -->
+        <div id="chat-window" class="chat-window"></div>
+
+        <!-- Input -->
+        <div class="chat-input">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Ask a question..."
+                autocomplete="off"
+            />
+            <button id="send-btn">Send</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

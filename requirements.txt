@@ -16,3 +16,4 @@ groq
 tavily-python
 mcp
 langchain-groq
+flask
