@@ -2,7 +2,7 @@ import os
 import sys
 
 from custom_exception import CustomException
-from app.embeddings.embedding import EmbeddingModel
+from app.RAG.embedding import EmbeddingModel
 from langchain_chroma import Chroma
 
 from app.utils import CHROMA_DB_DIR, COLLECTION_NAME

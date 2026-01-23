@@ -112,19 +112,3 @@ graph.add_edge("web", "answer")
 graph.add_edge("answer", END)
 
 app = graph.compile()
-
-# if __name__ == "__main__":
-#     test_questions = [
-#         "Who is Dialga and Palkia?",
-#         "Where can I get the header files for the DLLs?",
-#         "What is PMAY eligibility criteria?"
-#     ]
-
-#     for q in test_questions:
-#         print("\n" + "=" * 80)
-#         print("QUESTION:", q)
-
-#         result = app.invoke({"question": q})
-
-#         print("SOURCE USED:", result["source"])
-#         print("ANSWER:\n", result["answer"])

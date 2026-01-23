@@ -1,5 +1,5 @@
 # Custom ignore
-data/
+#data/
 polydoc_env/
 
 # Byte-compiled / optimized / DLL files
