@@ -175,51 +175,13 @@ This ensures that only **buildable artifacts** are deployed.
 
 ---
 
-## 🧪 Lessons Learned
-
-- Agentic routing improves reliability over static RAG pipelines
-- Internal knowledge bases are often incomplete — tool fallback is essential
-- Vectorstores and PDFs should be treated as **data**, not Git artifacts
-- Free cloud tiers are usually insufficient for PDF‑heavy RAG systems
-- CI should validate **code and containers**, not data artifacts
-
----
-
-## 📌 Future Improvements
-
-- Metadata-aware retrieval
-- Lazy-loading vectorstores
-- Monitoring (latency, token usage)
-- Security hardening (prompt injection, tool access control)
-
----
-
 ## 👤 Author
 
 **Om Tambat**  
-AI / ML Engineer (in transition)  
+AI / ML Engineer
 
 This project is part of a hands-on journey into **Agentic AI systems, MLOps, and real-world deployment challenges**.
 
 ---
-
-## 🔗 Useful Links
-
-- **LangGraph (Agent Flow Framework)**  
-  https://langchain-ai.github.io/langgraph/
-
-- **Demo Video**  
-  _Coming soon — will showcase PDF ingestion, agent routing, and tool fallback_
-
----
-
-## ⭐ If You’re Reviewing This Repo
-
-This project intentionally focuses on:
-- Internal PDF-based knowledge systems
-- Agentic decision-making (retrieve vs tool use)
-- Real-world CI/CD and deployment constraints
-
-Rather than just prompt engineering or model benchmarks.
 
 Thanks for reviewing 🙌
