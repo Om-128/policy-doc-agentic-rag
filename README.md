@@ -36,41 +36,18 @@ https://github.com/user-attachments/assets/393724e8-d3c0-4df0-8320-4bf930a9e4d7
 ```
 User Question
    ↓
+Flask API (Docker)
+   ↓
 Agent (LangGraph)
    ↓
 Decision Node
-   ├── If answer exists → Vector Retrieval (Chroma)
+   ├── If answer exists → Vector Retrieval (ChromaDB)
    └── If missing → External Tool / Search
    ↓
 LLM Reasoning (Groq)
    ↓
 Final Answer + Source Attribution
 ```
-User Query
-   ↓
-Flask API (Docker)
-   ↓
-Agent (LangGraph / LangChain)
-   ├── Retrieval Tool → ChromaDB
-   └── LLM Reasoning → Groq
-   ↓
-Final Answer + Sources
-```
-
-### Why Agentic RAG?
-
-Traditional RAG pipelines always retrieve documents, even when:
-- The answer is already known
-- The knowledge base is incomplete
-
-This system instead:
-- **Decides whether retrieval is needed**
-- Falls back to **external tools** when internal PDFs are insufficient
-- Enables more reliable internal knowledge assistants
-
-This pattern closely mirrors **real enterprise knowledge systems**.
-
----
 
 ## 🗂️ Project Structure
 
