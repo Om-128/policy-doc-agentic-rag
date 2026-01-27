@@ -13,8 +13,8 @@ tavily-python
 chromadb
 pyyaml
 langchain-huggingface
+sentence-transformers
 
-# sentence-transformers
 # pypdf
 # pdfminer.six
 # pdf2image
