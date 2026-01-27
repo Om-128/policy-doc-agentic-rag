@@ -22,5 +22,5 @@ jobs:
           git config --global user.email "ci@github.com"
           git config --global user.name "GitHub Actions"
 
-          git remote add hf https://Onix281:$HF_TOKEN@huggingface.co/spaces/Onix281/policy-doc-agentic-rag
+          git remote add hf https://Onix281:$HF_TOKEN@huggingface.co/spaces/Onix281/polygoc-agentic-rag
           git push hf main --force
