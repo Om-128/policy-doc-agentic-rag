@@ -4,21 +4,19 @@ python-dotenv
 langchain
 langchain-community
 langchain-groq
+langchain-chroma
 langgraph
 
 groq
 tavily-python
 
 chromadb
-langchain-chroma
-sentence-transformers
-
-pypdf
-pdfminer.six
-pdf2image
-unstructured
-unstructured-inference
-pi-heif
-langchain-huggingface
-
 pyyaml
+
+# sentence-transformers
+# pypdf
+# pdfminer.six
+# pdf2image
+# unstructured
+# unstructured-inference
+# pi-heif

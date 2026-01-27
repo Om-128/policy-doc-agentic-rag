@@ -1,0 +1,7 @@
+polydoc_env/
+.env
+__pycache__/
+*.pyc
+.git
+.gitignore
+node_modules
