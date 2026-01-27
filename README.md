@@ -100,17 +100,6 @@ policy-doc-agentic-rag/
 ├── requirements.txt
 └── README.md
 ```
-policy-doc-agentic-rag/
-├── app/
-│   └── frontend/
-│       └── app.py          # Flask entrypoint
-├── data/                   # (Local only) PDFs & vectorstore
-├── Dockerfile
-├── requirements.txt        # Runtime dependencies
-├── .github/workflows/
-│   └── ci.yml              # CI: Docker build check
-└── README.md
-```
 
 > ⚠️ **Note**: Binary artifacts (PDFs, vectorstores) are intentionally excluded from CI/CD to follow production best practices.
 
