@@ -12,6 +12,7 @@ tavily-python
 
 chromadb
 pyyaml
+langchain-huggingface
 
 # sentence-transformers
 # pypdf
