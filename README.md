@@ -5,6 +5,15 @@ An **Agentic PDF Question–Answering system** designed for **internal knowledge
 The core focus of this project is **PDF-based knowledge ingestion and retrieval**, combined with **agentic decision-making** using LangChain + LangGraph.
 
 This is a **production‑minded learning project** emphasizing **system design, tool routing, CI/CD, and MLOps trade‑offs**, rather than just LLM prompting.
+---
+
+## 🖼️ LangGraph Flowchart
+![Flowchart](https://github.com/user-attachments/assets/90d8996b-a6fc-4f4c-96f0-f7fdcbe49c4f)
+
+---
+
+## Demo Video
+https://github.com/user-attachments/assets/393724e8-d3c0-4df0-8320-4bf930a9e4d7
 
 ---
 
