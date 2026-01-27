@@ -1,0 +1,26 @@
+name: CI + CD (GitHub → Hugging Face Spaces)
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image (CI check)
+        run: docker build -t policy-doc-agentic-rag .
+
+      - name: Push to Hugging Face Space (CD)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git config --global user.email "ci@github.com"
+          git config --global user.name "GitHub Actions"
+
+          git remote add hf https://Onix281:$HF_TOKEN@huggingface.co/spaces/Onix281/policy-doc-agentic-rag
+          git push hf main --force
