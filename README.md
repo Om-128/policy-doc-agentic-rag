@@ -1,4 +1,4 @@
-# PolicyDoc Agentic RAG System
+# Agentic RAG System
 
 An **Agentic PDF Question–Answering system** designed for **internal knowledge bases**, where the system intelligently decides **when to answer from a vector database** and **when to invoke external tools** if the information is not available locally.
 
@@ -150,5 +150,6 @@ AI / ML Engineer
 This project is part of a hands-on journey into **Agentic AI systems, MLOps, and real-world deployment challenges**.
 
 ---
+
 
 Thanks for reviewing 🙌
